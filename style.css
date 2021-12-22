@@ -27,7 +27,7 @@ body{
 }
 .top-bar li{
     margin: 0 10px;
-    font-size: 17px;
+    font-size: 20px;
     
     
 }
@@ -42,11 +42,13 @@ body{
     overflow: auto;
     height: 80vh;
     display: flex;
+    width: 100%;
    
 }
 .container-center{
     margin: auto;
     padding: 50px 0;
+    
     
 }
 .product-header{
@@ -58,17 +60,24 @@ body{
     background-color: white;
     margin: 20px 30px;
     justify-content: center;    
+    padding: 40px 100px;
     align-items: center;
 
 }
 .product-align{
     display: flex;
-    gap: 15px;
-    margin: 40px 100px;
+    gap: 20px;
+    /* margin: 40px 100px; */
     justify-content: center;    
     align-items: center;
+    flex-wrap: wrap;
+    
     
 
+}
+.product-align a{
+    text-decoration: none;
+    color: #000;
 }
 .product-align a img{
     width: 225px;
@@ -95,9 +104,15 @@ body{
     margin: 7px 0;
     padding-right:10px;
 }
+/* ***************** Breakpoint **************** */
+
 @media (max-width: 1275px){
    .product-align, .top-bar ul{
         flex-wrap: wrap;
+    }
+    .center-content{
+        margin: 20px 70px;
+
     }
     
 }
@@ -105,14 +120,27 @@ body{
     .product-align{
         flex-wrap: wrap;
     }
-  
+    .center-content{
+        margin: 20px 70px;
+
+    }
+    .socmed-flex{
+        flex-wrap: wrap;
+        width: 110px;
+        justify-content: start;
+        
+    }
 
 }
 @media ( max-width: 660px){
     .socmed-flex{
         flex-wrap: wrap;
-        /* width: 110px; */
-
+        width: 100px;
+        justify-content: start;
+        
+    }
+    .socmed-flex li{
+        margin: 0;
     }
     .top-bar{
         flex-direction: column;
@@ -123,19 +151,29 @@ body{
         align-items: center;
     }
     .center-content{
-     margin-bottom: 100px;   
+     margin-bottom: 150px;   
+     margin: 20px 30px;
     }
     
 }
 @media (max-width: 440px){
   .center-content{
-      margin: 20px;
+      padding: 0;
+      margin-bottom: 150px;   
   }
   .product-align{
-      margin: 20px ;
-  }
-  .top-bar {
-      margin: 0%;
+      margin: 45px 0px;
       padding: 0%;
   }
+  .top-bar ul {
+      margin: 10px 0;
+      padding: 0%;
+  }
+ .socmed-flex{
+    flex-wrap: wrap;
+    width: 100px;
+    justify-content: start;  
+}
+
+
 }

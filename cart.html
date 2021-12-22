@@ -4,90 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Cart || Lazapee</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Acc.css">
 </head>
 <body>
-    <header>
-        <a href="/index.html"><img src="/img/lazapee-logo.png" alt="lazapee-logo" width="200px"> </a>
-  </header>
-<div>
-  <ul>
-      <li><a href="/Account/account.html">Account</a></li>
-      <li><a href="/cart.html">Cart</a></li>
-      <br>
-      <li><a href="/Categories/electronic.html">Electronic Device</a></li>
-      <li><a href="/Categories/health-beauty.html">Health & Beauty</a></li>
-      <li><a href="/Categories/babies-toys.html">Babies & Toys</a></li>
-      <li><a href="/Categories/groceries-pets.html">Groceries & Pets</a></li>
-      <li><a href="/Categories/home-living.html">Home & Living</a></li>
-      <li><a href="/Categories/fashion.html">Fashion</a></li>
-      </br>
-  </ul>
-  <hr>
+<div class="top-bar">
+        <header>
+          <a href="/index.html"
+            ><img src="/img/lazapee-logo.png" alt="lazapee-logo" width="200px" />
+          </a>
+        </header>
+          <ul>
+            <li><a href="/Categories/electronic.html">Electronic Device</a></li>
+            <li><a href="/Categories/health-beauty.html">Health & Beauty</a></li>
+            <li><a href="/Categories/babies-toys.html">Babies & Toys</a></li>
+            <li><a href="/Categories/groceries-pets.html">Groceries & Pets</a></li>
+            <li><a href="/Categories/home-living.html">Home & Living</a></li>
+            <li><a href="/Categories/fashion.html">Fashion</a></li>
+          </ul>
+          <ul>
+            <li><a href="/Account/account.html">Account</a></li>
+            <li><a href="/cart.html">Cart</a></li>
+          </ul>
+  </div>
+<div class="cart-box">
+    <h1> Cart</h1>
+    <div class="cart-container">
+        
+
+        <table border="1">
+         <tr class="nav">
+             <td> Order#</td>
+             <td class="Number">Place On</td>
+             <td>Items</td>
+             <td>Quantity</td>
+             <td>Total</td>   
+             <td width="80"></td>  
+         </tr>
+         <tr>
+             <td>320819449488519</td>
+             <td class="Number">24/09/2020</td>
+             <td>headphone</td>
+             <td>1</td>
+             <td>P2500</td>
+             <td class="link"> <a href="#">Edit</a> | <a href="#">Delete</a></td>
+         </tr>
+         
+     
+         <tr>
+             <td>189267874530189</td>
+             <td class="Number">24/09/2020</td>
+             <td>Baby Blocks</td>
+             <td>5</td>
+             <td>P4000</td>
+             <td  class="link"> <a href="#">Edit</a> | <a href="#">Delete</a></td>
+         </tr>
+     
+     
+         <tr>
+             <td>383674981093821</td>
+             <td class="Number">24/09/2020</td>
+             <td>Cat Shirt</td>
+             <td>2</td>
+             <td>P900</td>
+             <td class="link"> <a href="#">Edit</a> | <a href="#">Delete</a></td>
+         </tr>
+     
+         <tr class="ship">
+         <td colspan="4">Shipping: </td>
+         <td colspan="2">P600</td>
+         </tr>
+         
+         <tr class="ship">
+             <td colspan="4">Total: </td>
+             <td colspan="2">P7460</td>
+             </tr>
+        </table>
+
+    </div>
 </div>
-<div>
-   <h1> Cart</h1>
-
-   <table border="1">
-    <tr>
-        <td> Order#</td>
-        <td>Place On</td>
-        <td>Items</td>
-        <td>Quantity</td>
-         <td>Total</td>   
-         <td width="80"></td>  
-    </tr>
-    <tr>
-        <td>320819449488519</td>
-        <td>24/09/2020</td>
-        <td>headphone</td>
-        <td>1</td>
-        <td>P2500</td>
-        <td> <a href="#">Edit</a> <a href="#">Delete</a></td>
-    </tr>
-    
-
-    <tr>
-        <td>189267874530189</td>
-        <td>24/09/2020</td>
-        <td>Baby Blocks</td>
-        <td>5</td>
-        <td>P4000</td>
-        <td> <a href="#">Edit</a> <a href="#">Delete</a></td>
-    </tr>
 
 
-    <tr>
-        <td>3836749810938219</td>
-        <td>24/09/2020</td>
-        <td>Cat Shirt</td>
-        <td>2</td>
-        <td>P900</td>
-        <td> <a href="#">Edit</a> <a href="#">Delete</a></td>
-    </tr>
-
-    <tr>
-    <td colspan="4">shipping: </td>
-    <td colspan="2">P600</td>
-    </tr>
-    
-    <tr>
-        <td colspan="4">Total: </td>
-        <td colspan="2">P7460</td>
-        </tr>
-   </table>
-   <hr>
-</div>
 <footer>
-    <p>&copy Lazapee 2020</p>
+    <div class="footer-content">
+      <div class="socmed">
+          <ul>
+            <li><strong>Follow Us</strong></li>
+          </ul>
+          <ul class="socmed-flex">
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img
+                  src="../.././img/socials-20211031T034131Z-001/facebook.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  src="../.././img/socials-20211031T034131Z-001/instagram.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank"
+                ><img
+                  src="../.././img/socials-20211031T034131Z-001/twitter.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" target="_blank"
+                ><img
+                  src="../.././img/socials-20211031T034131Z-001/youtube.png"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
 
-    <ul>
-        <li><Strong>Follow Us</Strong></li>
-        <li><a href="https://www.facebook.com/" target="_blank"><img src="./img/socials-20211031T034131Z-001/facebook.png" alt=""></a></li>
-        <li><a href="https://www.instagram.com/" target="_blank"><img src="./img/socials-20211031T034131Z-001/instagram.png" alt=""></a></li>
-        <li><a href="https://twitter.com/" target="_blank"><img src="./img/socials-20211031T034131Z-001/twitter.png" alt=""></a></li>
-        <li><a href="https://www.youtube.com/" target="_blank"><img src="./img/socials-20211031T034131Z-001/youtube.png" alt=""></a></li>
-    </ul>
-</footer>
+      <p>&copy Lazapee <span> 2020</span></p>
+      </div>
+  </footer>
 </body>
 </html>

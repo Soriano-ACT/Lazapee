@@ -1,0 +1,62 @@
+
+.Acc-box a{
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: #252f7b;
+}
+.Acc-box{
+    margin: 50px;
+    height: 80vh;
+    overflow: auto;
+    margin-bottom: 150px;
+}
+.Acc-container{
+    background-color: #fff;
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+}  
+.Acc-box h1{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.Acc-box .Acc-container table{
+    border-style: none;
+}
+.Acc-box .Acc-container tr td{
+    border-style: none;
+    width: 650px;
+    padding: 10px;
+}
+.Acc-box .Acc-container .boxs{
+    width: 500px;
+    height: 30px;
+}
+.Acc-box .Acc-container table .btn-green{
+    background-color: #28a745;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 700px;
+}
+@media (max-width: 1000px){
+    .Acc-box .Acc-container table .btn-green{
+        margin: auto;
+    }
+}
+@media (max-width: 880px){
+    .Acc-box .Acc-container .boxs{
+        width: 400px;
+    }
+}
+@media(max-width:660px){
+    .Acc-box .Acc-container .boxs{
+        width: auto;
+    }
+}
